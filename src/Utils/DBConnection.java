@@ -11,7 +11,7 @@ public class DBConnection {
       + "encrypt=true;"
       + "trustServerCertificate=true";
 
-    private static final String USER = "sa";      // đổi nếu khác
+    private static final String USER = "sa";      
     private static final String PASSWORD = "123";
 
     public static Connection getConnection() {
