@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thêm Thiết Bị - FIFA FIELD</title>
+    
     <!-- Tailwind CSS & Google Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -53,19 +53,20 @@
                 <h1 class="text-2xl font-black text-slate-900 tracking-tighter">FIFA<span class="text-emerald-600">FIELD</span></h1>
             </div>
             <div class="flex items-center gap-4">
-                <a href="${pageContext.request.contextPath}/equipment-list" class="text-sm font-bold text-slate-500 hover:text-emerald-600 flex items-center gap-2 transition-all">
-                    <i data-lucide="list" class="w-4 h-4"></i> QUẢN LÝ KHO
-                </a>
-            </div>
+    <a href="${pageContext.request.contextPath}/equipment-list"
+       class="flex items-center gap-2 px-5 py-2 rounded-full hover:bg-emerald-50 
+              text-slate-600 hover:text-emerald-600 font-black text-sm transition-all">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        quay lại
+    </a>
+    </div>
+
         </div>
     </header>
 
     <div class="max-w-3xl mx-auto px-6 pt-12">
         <!-- Breadcrumb & Title -->
-        <div class="mb-10">
-            <h2 class="text-4xl font-black text-slate-900 uppercase italic tracking-tighter">Thêm Thiết Bị Mới</h2>
-            <p class="text-slate-400 font-bold uppercase text-[10px] tracking-widest mt-1">Cập nhật kho đồ dùng cho các trận đấu</p>
-        </div>
+        
 
         <!-- Thông báo JSTL -->
         <c:if test="${not empty error}">
